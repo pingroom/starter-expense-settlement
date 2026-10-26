@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.pingroom/
+.settlement/
+/expenses.json
+.DS_Store
+*.log
