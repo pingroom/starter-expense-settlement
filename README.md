@@ -53,9 +53,11 @@ decimal places. These are syntax checks, **not verified currency metadata**. Con
 both values yourself. All receipts must already use that single currency and scale.
 
 Install [PingRoom](https://pingroom.io/i), approve the pairing link, and choose a
-**standard private room** containing every participant. Grant `pingroom:rooms:read`,
-`pingroom:questions:ask`, and access to that room. Normal permissions and quotas
-apply. The connecting account may be a participant.
+**standard private room** containing every participant. PingRoom defines the
+capability grant for new connections (`pingroom:full`); you choose which rooms
+the connection may access. Asking another participant requires the connecting
+account to be the room owner or an admin, or the room to allow everyone to trigger.
+Normal permissions and quotas apply. The connecting account may be a participant.
 
 `inspect` lists member UUIDs and lookup names. Verify each person in the app and
 replace the example UUIDs in `expenses.json`; names alone do not establish identity.
